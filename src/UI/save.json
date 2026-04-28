@@ -1,0 +1,23 @@
+{
+    "aspectRatio": 1.0,
+    "defocusAngle": 0,
+    "imgWidth": 600,
+    "lookat": [
+        278,
+        278,
+        0
+    ],
+    "maxDepth": 5,
+    "position": [
+        278,
+        278,
+        -800
+    ],
+    "samplesPerPixel": 10,
+    "vfov": 40,
+    "vup": [
+        0,
+        1,
+        0
+    ]
+}

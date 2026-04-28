@@ -1,0 +1,20 @@
+#version 460
+
+layout(local_size_x = 16, local_size_y = 16) in;
+
+layout(set = 0, binding = 1, rgba8) uniform image2D currentImage;
+layout(set = 0, binding = 2, rgba8) uniform image2D historyImage;
+layout(set = 0, binding = 3, rgba8) uniform image2D outputImage;
+
+void main(){
+	ivec2 id = ivec2(gl_GlobalInvocationID.xy);
+
+    vec4 history = imageLoad(historyImage, id);
+    vec4 current = imageLoad(currentImage, id);
+
+	 vec4 result = mix(current, history, 0.25);
+
+    imageStore(outputImage, ivec2(id), result);
+    imageStore(historyImage, ivec2(id), result);
+    
+}
