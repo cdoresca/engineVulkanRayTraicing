@@ -8,7 +8,7 @@ A C++20 real-time rendering engine built on the **Vulkan** graphics API, featuri
 
 - **Vulkan ray tracing pipeline** — ray generation (`.rgen`), closest-hit (`.rchit`), and miss (`.rmiss`) shaders compiled to SPIR-V at build time
 - **Compute shaders** (`.comp`) for GPU-side post-processing / auxiliary passes
-- **Embree-backed CPU ray tracing**, fetched automatically as a prebuilt binary during CMake configuration
+- **Embree-backed CPU path tracing**, fetched automatically as a prebuilt binary during CMake configuration
 - **Scene loading** with `tinyobjloader` (`.obj` meshes) and `nlohmann/json` (scene/config description)
 - **Image I/O** via `stb`
 - **Math** via `GLM`
@@ -69,5 +69,5 @@ build\Release\Engine.exe
 
 ## Notes
 
-- This project originates from an academic assignment (course project `H26`, École/Université de Sherbrooke). The repository was later mirrored to GitHub.
+- This project originates from an academic assignment (course project `H26`,Université de Sherbrooke). The repository was later mirrored to GitHub.
 - Shader compilation targets `vulkan1.4` via `glslc`; make sure your installed Vulkan SDK version supports this target environment.
