@@ -1,6 +1,6 @@
 # Engine — Vulkan Ray Tracing Engine
 
-A C++20 real-time rendering engine built on the **Vulkan** graphics API, featuring hardware-accelerated **ray tracing** (via `VK_KHR_ray_tracing_pipeline`), a **CPU ray tracing backend powered by Intel Embree**, compute shaders, and an in-app editor built with **Dear ImGui** / **ImGuizmo**.
+A C++20 real-time rendering engine built on the **Vulkan** graphics API, featuring hardware-accelerated **ray tracing** (via `VK_KHR_ray_tracing_pipeline`), a **CPU path tracing backend powered by Intel Embree**, compute shaders, disney material and an in-app editor built with **Dear ImGui** / **ImGuizmo**.
 
 > Repo: [`cdoresca/engineVulkanRayTraicing`](https://github.com/cdoresca/engineVulkanRayTraicing)
 
